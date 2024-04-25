@@ -1,14 +1,11 @@
-import { useEffect } from 'react';
+import { NavBar } from './components';
 
-import './App.css';
+import './assets/css/main.css';
 
 function App() {
-	useEffect(() => {
-		document.title = "La Posh Beauty Supply and Salon";
-	}, []);
-
 	return (
 		<div className="App">
+			<NavBar />
 		</div>
 	);
 }

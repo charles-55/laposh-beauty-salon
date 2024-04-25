@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top:  75px;
+}
+
+.App {
+	background-color: #121212 !important;
+	color: #ffffff !important;
+	font-family: 'Centra', sans-serif !important;
+	font-weight: 400;
+	overflow-x: hidden;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+}
+
+p, a, li, button, ul {
+	line-height: normal;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+a:hover {
+  	text-decoration: none;
+}
+
+img {
+	height: auto;
+	width: 100%;
+}
+
+button {
+	background-color: transparent;
+	border: 0;
+}
+
+input:focus, textarea:focus, select:focus {
+  	outline: none;
+}
+
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
