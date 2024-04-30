@@ -9,7 +9,6 @@ import '../assets/css/navbar.css';
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
     const [scrolled, setScrolled] = useState(false);
-	var hoverState = [false, false];
 
     useEffect(() => {
         const onScroll = () => {
@@ -24,14 +23,6 @@ export const NavBar = () => {
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     };
-
-	const handleMouseEnter = (index) => {
-		hoverState[index] = true;
-	};
-	
-	const handleMouseLeave = (index) => {
-		hoverState[index] = false;
-	};
 
     return (
 		<Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
@@ -51,8 +42,8 @@ export const NavBar = () => {
 					</Nav>
 					<span className="navbar-text">
 						<div className="social-icon">
-							<a href="https://www.instagram.com/laposhbeautysupplyandsalon/" onMouseEnter={handleMouseEnter(0)} onMouseLeave={handleMouseLeave(0)}><Instagram className='navbar-icon' color={hoverState[0] ? 'black' : 'white'} /></a>
-                            <a href="https://www.tiktok.com/@laposhbeautysupply" onMouseEnter={handleMouseEnter(1)} onMouseLeave={handleMouseLeave(1)}><Tiktok className='navbar-icon' color={hoverState[1] ? 'black' : 'white'} /></a>
+							<a href="https://www.instagram.com/laposhbeautysupplyandsalon/"><Instagram className='navbar-icon' color='white' /></a>
+                            <a href="https://www.tiktok.com/@laposhbeautysupply"><Tiktok className='navbar-icon' color='white' /></a>
 						</div>
 						<button onClick={() => document.getElementById('connect').scrollIntoView({ behavior: 'smooth' })}><span>Let's Connect</span></button>
 					</span>

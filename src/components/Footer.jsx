@@ -15,8 +15,8 @@ export const Footer = () => {
                     </Col>
                     <Col sm={6} className='text-center text-sm-end'>
                         <div className='social-icon'>
-                            <a href="https://www.instagram.com/laposhbeautysupplyandsalon/"><Instagram color='white' /></a>
-                            <a href="https://www.tiktok.com/@laposhbeautysupply"><Tiktok color='white' /></a>
+                            <a href="https://www.instagram.com/laposhbeautysupplyandsalon/"><Instagram className='navbar-icon' color='white' /></a>
+                            <a href="https://www.tiktok.com/@laposhbeautysupply"><Tiktok className='navbar-icon' color='white' /></a>
                         </div>
                         <p>CopyRight 2024. All Right Reserved.</p>
                     </Col>
