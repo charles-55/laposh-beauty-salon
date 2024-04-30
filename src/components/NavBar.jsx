@@ -27,15 +27,15 @@ export const NavBar = () => {
     return (
 		<Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
 			<Container>
-				<Navbar.Brand href="#home">
-					<a href='/'><img className='rounded-circle' src={logo} alt='Logo' /></a>
+				<Navbar.Brand href="/">
+					<img className='rounded-circle' src={logo} alt='Logo' />
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav">
 					<span className="navbar-toggler-icon"></span>
 				</Navbar.Toggle>
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
-						<Nav.Link href="#home" className={activeLink === "home" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("home")}>Home</Nav.Link>
+						<Nav.Link href="/" className={activeLink === "home" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("home")}>Home</Nav.Link>
 						<Nav.Link href="#services" className={activeLink === "services" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("services")}>Services</Nav.Link>
 						<Nav.Link href="#products" className={activeLink === "products" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("products")}>Products</Nav.Link>
 					</Nav>

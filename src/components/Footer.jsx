@@ -11,7 +11,7 @@ export const Footer = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col sm={6}>
-                        <img className='rounded-circle' src={logo} alt="Logo" />
+                        <a href='/'><img className='rounded-circle' src={logo} alt='Logo' /></a>
                     </Col>
                     <Col sm={6} className='text-center text-sm-end'>
                         <div className='social-icon'>
