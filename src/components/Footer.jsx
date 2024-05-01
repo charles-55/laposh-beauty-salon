@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import { Instagram, Tiktok } from 'react-bootstrap-icons';
+import { Facebook, Instagram, Tiktok, TwitterX } from 'react-bootstrap-icons';
 
 import logo from '../assets/img/logo.png';
 
@@ -16,7 +16,9 @@ export const Footer = () => {
                     <Col sm={6} className='text-center text-sm-end'>
                         <div className='social-icon'>
                             <a href="https://www.instagram.com/laposhbeautysupplyandsalon/"><Instagram className='navbar-icon' color='white' /></a>
-                            <a href="https://www.tiktok.com/@laposhbeautysupply"><Tiktok className='navbar-icon' color='white' /></a>
+                            <a href="https://www.tiktok.com/@laposh.beauty.sho"><Tiktok className='navbar-icon' color='white' /></a>
+                            <a href="https://twitter.com/laposhbeautys"><TwitterX className='navbar-icon' color='white' /></a>
+                            <a href="https://www.facebook.com/profile.php?id=61558260822114"><Facebook className='navbar-icon' color='white' /></a>
                         </div>
                         <p>CopyRight 2024. All Right Reserved.</p>
                     </Col>

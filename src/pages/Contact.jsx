@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import TrackVisibility from 'react-on-screen';
-import { EnvelopeAt, Instagram, Telephone, Tiktok } from 'react-bootstrap-icons';
+import { CalendarWeek, Clock, EnvelopeAt, Facebook, Instagram, Telephone, Tiktok, TwitterX } from 'react-bootstrap-icons';
 
 import 'animate.css';
 import '../assets/css/contact.css';
@@ -72,21 +72,25 @@ export const Contact = () => {
                         <Col>
                             <h3>Hours of Operation</h3>
                             <table width={'100%'}>
-                                <tr>
-                                    <td>Moday - Saturday</td>
-                                    <td>9AM - 8PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Sunday</td>
-                                    <td>Closed</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td><CalendarWeek /> Moday - Saturday</td>
+                                        <td><Clock /> 9AM - 8PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td><CalendarWeek /> Sunday</td>
+                                        <td><Clock /> Closed</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </Col>
 
                         <Col>
                             <h3>Our Platforms</h3>
                             <p><a href="https://www.instagram.com/laposhbeautysupplyandsalon/"><Instagram /> Instagram</a></p>
-                            <p><a href="https://www.tiktok.com/@laposhbeautysupply"><Tiktok /> TikTok</a></p>
+                            <p><a href="https://www.tiktok.com/@laposh.beauty.sho"><Tiktok /> TikTok</a></p>
+                            <p><a href="https://twitter.com/laposhbeautys"><TwitterX className='navbar-icon' color='white' /> Twitter</a></p>
+                            <p><a href="https://www.facebook.com/profile.php?id=61558260822114"><Facebook className='navbar-icon' color='white' /> Facebook</a></p>
                         </Col>
                     </Row>
                 </div>

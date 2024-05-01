@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import { Instagram, Tiktok } from 'react-bootstrap-icons';
+import { Facebook, Instagram, Tiktok, TwitterX } from 'react-bootstrap-icons';
 
 import logo from '../assets/img/logo.png';
 
 import '../assets/css/navbar.css';
 
 export const NavBar = () => {
-    const [activeLink, setActiveLink] = useState("home");
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -20,10 +19,6 @@ export const NavBar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value);
-    };
-
     return (
 		<Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
 			<Container>
@@ -35,14 +30,16 @@ export const NavBar = () => {
 				</Navbar.Toggle>
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
-						<Nav.Link href="/" className={activeLink === "home" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("home")}>Home</Nav.Link>
-						<Nav.Link href="#services" className={activeLink === "services" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("services")}>Services</Nav.Link>
-						<Nav.Link href="#products" className={activeLink === "products" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("products")}>Products</Nav.Link>
+						<Nav.Link href="/" className={["", "/"].includes(window.location.pathname) ? "active navbar-link" : "navbar-link"}>Home</Nav.Link>
+						<Nav.Link href="/products" className={["/products", "/products/"].includes(window.location.pathname) ? "active navbar-link" : "navbar-link"}>Products</Nav.Link>
+						<Nav.Link href="/booking" className={["/booking", "/booking/"].includes(window.location.pathname) ? "active navbar-link" : "navbar-link"}>Book Appointment</Nav.Link>
 					</Nav>
 					<span className="navbar-text">
 						<div className="social-icon">
 							<a href="https://www.instagram.com/laposhbeautysupplyandsalon/"><Instagram className='navbar-icon' color='white' /></a>
-                            <a href="https://www.tiktok.com/@laposhbeautysupply"><Tiktok className='navbar-icon' color='white' /></a>
+                            <a href="https://www.tiktok.com/@laposh.beauty.sho"><Tiktok className='navbar-icon' color='white' /></a>
+                            <a href="https://twitter.com/laposhbeautys"><TwitterX className='navbar-icon' color='white' /></a>
+                            <a href="https://www.facebook.com/profile.php?id=61558260822114"><Facebook className='navbar-icon' color='white' /></a>
 						</div>
 						<button onClick={() => document.getElementById('connect').scrollIntoView({ behavior: 'smooth' })}><span>Contact Us</span></button>
 					</span>
