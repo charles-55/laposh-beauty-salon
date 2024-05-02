@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import { auth } from '../config/firebase';
+import { signOut } from 'firebase/auth';
 import { Facebook, Instagram, Tiktok, TwitterX } from 'react-bootstrap-icons';
 
 import logo from '../assets/img/logo.png';
@@ -19,6 +21,19 @@ export const NavBar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
+	const handleAuth = async () => {
+		if (auth?.currentUser) {
+			try {
+				await signOut(auth);
+				window.location = "/";
+			} catch (err) {
+				console.error(err);
+			}
+		} else {
+			window.location = "/login";
+		}
+	};
+
     return (
 		<Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
 			<Container>
@@ -33,6 +48,7 @@ export const NavBar = () => {
 						<Nav.Link href="/" className={["", "/"].includes(window.location.pathname) ? "active navbar-link" : "navbar-link"}>Home</Nav.Link>
 						<Nav.Link href="/products" className={["/products", "/products/"].includes(window.location.pathname) ? "active navbar-link" : "navbar-link"}>Products</Nav.Link>
 						<Nav.Link href="/booking" className={["/booking", "/booking/"].includes(window.location.pathname) ? "active navbar-link" : "navbar-link"}>Book Appointment</Nav.Link>
+						<Nav.Link className="navbar-link" onClick={handleAuth}>{auth?.currentUser ? "Logout" : "Login"}</Nav.Link>
 					</Nav>
 					<span className="navbar-text">
 						<div className="social-icon">
