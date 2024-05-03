@@ -58,7 +58,7 @@ export const Login = () => {
                 <p className={(status.success === false) ? "danger" : "success"}>{status.message}</p>
             }
 
-            <div className='hr-or-hr'>
+            {/* <div className='hr-or-hr'>
                 <span>Or</span>
             </div>
 
@@ -68,7 +68,7 @@ export const Login = () => {
                         <a onClick={signInWithGoogle}><Google className='navbar-icon' color='white' /></a>
                     </div>
                 </Col>
-            </div>
+            </div> */}
         </div>
     );
 };
