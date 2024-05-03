@@ -60,7 +60,6 @@ export const Login = () => {
 
             <div className='hr-or-hr'>
                 <span>Or</span>
-                
             </div>
 
             <div>
