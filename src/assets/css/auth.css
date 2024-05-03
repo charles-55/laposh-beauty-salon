@@ -1,0 +1,92 @@
+.auth-page {
+    padding: 0 30%;
+}
+
+#logo {
+    height: 200px;
+    width: auto;
+}
+
+input {
+    padding: 15px;
+    width: 100%;
+}
+
+#auth-btn {
+    border-radius: 25px;
+    width: 100%;
+}
+
+p.success {
+    color: #008000;
+}
+
+p.danger {
+    color: #ff0000;
+}
+
+/* .hr-or-hr {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+}
+  
+.hr-or-hr::before,
+.hr-or-hr::after {
+    border-top: 2px solid #ffffff;
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+}
+
+.hr-or-hr::before {
+    right: 0;
+}
+
+.hr-or-hr::after {
+    left: 0;
+}
+
+.hr-or-hr span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 10px;
+}
+
+.other-signin-options {
+    margin-top: 60px;
+}
+
+.other-signin-options a {
+    align-items: center;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-flex;
+    height: 42px;
+    justify-content: center;
+    margin: 0 3px;
+    width: 42px;
+}
+
+.other-signin-options a::before {
+    background-color: #ffffff;
+    border-radius: 50%;
+    content: "";
+    height: 42px;
+    position: absolute;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+    width: 42px;
+}
+
+.other-signin-options a:hover::before {
+    transform: scale(1);
+}
+
+.other-signin-options a:hover .navbar-icon {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+} */
