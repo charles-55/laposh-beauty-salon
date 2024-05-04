@@ -49,6 +49,10 @@ export const NavBar = () => {
 						<Nav.Link href="/products" className={["/products", "/products/"].includes(window.location.pathname) ? "active navbar-link" : "navbar-link"}>Products</Nav.Link>
 						<Nav.Link href="/booking" className={["/booking", "/booking/"].includes(window.location.pathname) ? "active navbar-link" : "navbar-link"}>Book Appointment</Nav.Link>
 						<Nav.Link className="navbar-link" onClick={handleAuth}>{auth?.currentUser ? "Logout" : "Login"}</Nav.Link>
+						{
+							auth?.currentUser && 
+							<Nav.Link href="/admin" className={["/admin", "/admin/"].includes(window.location.pathname) ? "active navbar-link" : "navbar-link"}>Admin</Nav.Link>
+						}
 					</Nav>
 					<span className="navbar-text">
 						<div className="social-icon">

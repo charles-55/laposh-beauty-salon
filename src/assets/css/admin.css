@@ -1,0 +1,68 @@
+/* Sidebar styling */
+.admin-sidebar {
+    position: fixed;
+    width: 200px;
+}
+
+.toggle-sidebar {
+    padding-left: 15px;
+}
+
+.admin-sidebar-list {
+    height: auto;
+    margin-top: 15px;
+    padding: 0;
+    width: 100%;
+}
+
+.admin-sidebar-list li {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+}
+
+#minimized li {
+    text-align: center;
+    flex-direction: column;
+}
+
+.admin-sidebar-list .active {
+    background-color: rgb(128, 128, 128, 0.25);
+}
+
+.admin-sidebar-list li:hover {
+    cursor: pointer;
+    font-weight: 650;
+}
+
+.admin-sidebar-list #icon {
+    display: grid;
+    flex: 30%;
+    place-items: center;
+}
+
+.admin-sidebar-list #title {
+    flex: 70%;
+}
+
+#minimized #title {
+    font-size: xx-small;
+}
+
+/* Page content styling */
+.admin-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.admin-content {
+    border-left: 1px solid white;
+    margin-left: 200px;
+    padding-left: 20px;
+}
