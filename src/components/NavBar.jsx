@@ -21,6 +21,11 @@ export const NavBar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
+	const handleNavbarDropdown = () => {
+		const navbar = document.querySelector('nav');
+		navbar.classList.toggle('bg-black');
+	};
+
 	const handleAuth = async () => {
 		if (auth?.currentUser) {
 			try {
@@ -40,7 +45,7 @@ export const NavBar = () => {
 				<Navbar.Brand href="/">
 					<img className='rounded-circle' src={logo} alt='Logo' />
 				</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav">
+				<Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleNavbarDropdown}>
 					<span className="navbar-toggler-icon"></span>
 				</Navbar.Toggle>
 				<Navbar.Collapse id="basic-navbar-nav">

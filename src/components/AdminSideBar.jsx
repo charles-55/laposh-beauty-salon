@@ -12,7 +12,7 @@ export const AdminSideBar = () => {
         let currentSection = null;
         sections.forEach(section => {
             const rect = section.getBoundingClientRect();
-            if (rect.top <=100 && rect.bottom > 0) {
+            if (rect.top <=175 && rect.bottom > 0) {
                 currentSection = section.id;
             }
         });

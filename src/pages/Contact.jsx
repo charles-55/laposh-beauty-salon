@@ -74,7 +74,7 @@ export const Contact = () => {
                             <table width={'100%'}>
                                 <tbody>
                                     <tr>
-                                        <td><CalendarWeek /> Moday - Saturday</td>
+                                        <td><CalendarWeek /> Monday - Saturday</td>
                                         <td><Clock /> 9AM - 8PM</td>
                                     </tr>
                                     <tr>

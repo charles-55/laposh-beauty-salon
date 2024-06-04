@@ -20,11 +20,10 @@ html {
 	min-height: 100vh;
 	overflow-x: hidden;
 	position: relative;
-	min-width: 100vw;
 }
 
 main {
-    padding: 230px 5% 100px 5%;
+    padding: 175px 5% 100px 5%;
 }
 
 h1, h2, h3, h4, h5, h6 {

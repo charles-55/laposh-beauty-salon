@@ -1,0 +1,16 @@
+/* Product page styling */
+.product-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Product item styling */
+.product-item {
+    box-shadow: 0 0 10px 10px rgba(199, 199, 199, 0.2);
+    border: 1px solid white;
+    flex: 1 0 21%;
+    height: 250px;
+    padding: 5px;
+    width: 150px;
+}
